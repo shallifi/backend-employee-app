@@ -1,3 +1,6 @@
 class ProgramSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :id, :name, :agency_id
+
+ 
+
 end
