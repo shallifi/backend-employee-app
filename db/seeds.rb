@@ -23,3 +23,87 @@
 #     name: "other"
 # }
 # ])
+
+# Program.create!([
+
+# {
+#     name: "Child Welfare",
+#     agency_id: 1
+# },
+# {
+#     name: "Child Welfare",
+#     agency_id: 2
+# },
+# {
+#     name: "Child Welfare",
+#     agency_id: 3
+# },
+# {
+#     name: "Child Welfare",
+#     agency_id: 4
+# },
+# {
+#     name: "Child Welfare",
+#     agency_id: 5
+# },
+# {
+#     name: "Out of Home Care",
+#     agency_id: 1
+# },
+# {
+#     name: "Out of Home Care",
+#     agency_id: 2
+# },
+# {
+#     name: "Out of Home Care",
+#     agency_id: 3
+# },
+# {
+#     name: "Out of Home Care",
+#     agency_id: 4
+# },
+# {
+#     name: "Out of Home Care",
+#     agency_id: 5
+# },
+# {
+#     name: "Prevention / Diversion",
+#     agency_id: 1
+# },
+# {
+#     name: "Prevention / Diversion",
+#     agency_id: 2
+# },
+# {
+#     name: "Prevention / Diversion",
+#     agency_id: 3
+# },
+# {
+#     name: "Prevention / Diversion",
+#     agency_id: 4
+# },
+# {
+#     name: "Prevention / Diversion",
+#     agency_id: 5
+# },
+# {
+#     name: "Social Services",
+#     agency_id: 1
+# },
+# {
+#     name: "Social Services",
+#     agency_id: 2
+# },
+# {
+#     name: "Social Services",
+#     agency_id: 3
+# },
+# {
+#     name: "Social Services",
+#     agency_id: 4
+# },
+# {
+#     name: "Social Services",
+#     agency_id: 5
+# }
+# ])
