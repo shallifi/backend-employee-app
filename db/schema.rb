@@ -10,12 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_09_031951) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_08_032828) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "agencies", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "departments", force: :cascade do |t|
+    t.string "name"
+    t.bigint "program_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["program_id"], name: "index_departments_on_program_id"
+  end
+
+  create_table "employees", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.datetime "start_date"
+    t.string "agency"
+    t.integer "employee_is"
+    t.string "office_location"
+    t.string "program"
+    t.string "department"
+    t.string "title"
+    t.integer "office_number"
+    t.integer "extension"
+    t.string "supervisor_name"
+    t.integer "employee_attending_pre_service"
+    t.integer "scc_employee_driving_for_position"
+    t.integer "will_employee_transport_children"
+    t.integer "needs"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -28,5 +57,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_09_031951) do
     t.index ["agency_id"], name: "index_programs_on_agency_id"
   end
 
+  add_foreign_key "departments", "programs"
   add_foreign_key "programs", "agencies"
 end

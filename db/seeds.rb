@@ -24,6 +24,50 @@
 # }
 # ])
 
+# Department.create!([
+
+#     {
+#         name: "Accounting",
+#         program_id: 2
+#     },
+#     {
+#         name: "Accounting",
+#         program_id: 3
+#     },
+#     {
+#         name: "Accounting",
+#         program_id: 4
+#     },
+#     {
+#         name: "Accounting",
+#         program_id: 5
+#     },
+#     {
+#         name: "Accounting",
+#         program_id: 6
+#     },
+#     {
+#         name: "Accounting",
+#         program_id: 7
+#     },
+#     {
+#         name: "Accounting",
+#         program_id: 8
+#     },
+#     {
+#         name: "Accounting",
+#         program_id: 9
+#     },
+#     {
+#         name: "Accounting",
+#         program_id: 10
+#     },
+#     {
+#         name: "Accounting",
+#         program_id: 11
+#     },
+#     ])
+
 # Program.create!([
 
 # {
